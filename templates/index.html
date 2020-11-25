@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello</title>
+  <title>Dagens Undskyldning</title>
   <style>
     html, body {
       font-family: sans-serif;
@@ -20,8 +20,13 @@
 <body>
 
   <section class="main">
-    <h1>Hello world!</h1>
-    <p>Welcome to the Passenger Flask example app.</p>
+    <h1>
+      {% if excuse %}
+        Jeg kan ikke komme på arbejde fordi, {{ excuse }}!
+      {% else %}
+        Siden virker ikke, fordi den ikke fungerer.
+      {% endif %}
+    </h1>
   </section>
 
 </body>
