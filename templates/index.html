@@ -15,6 +15,12 @@
       border-radius: 8px;
       padding: 2em;
     }
+
+    .newExcuse {
+      margin-top: 10px;
+      padding-right: 0;
+    }
+
   </style>
 </head>
 <body>
@@ -27,6 +33,12 @@
         Siden virker ikke, fordi den ikke fungerer.
       {% endif %}
     </h1>
+  </section>
+
+  <section class="newExcuse">
+    <form method="GET" action="/">
+      <input type="submit" value="Ny undskyldning" name="Ny undskyldning"/>
+    </form>
   </section>
 
 </body>
