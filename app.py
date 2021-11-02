@@ -3,7 +3,7 @@ from random import choice
 DailyExcuse = Flask(__name__)
 
 excuses = []
-with open('undskyldninger.txt', encoding="utf-8") as f:
+with open('undskyldninger.txt', encoding="utf-8") as f: #Sikrer utf-8 encoding
 	excuses = f.readlines()
 
 def getRandomExcuse():
